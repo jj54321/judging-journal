@@ -1,0 +1,15 @@
+<%= form_for [@user, @newsletter] do |f| %>
+<div class="newsletter_attribute">
+
+  <%= f.label :title %>
+  <%= f.text_field :title %><br>
+
+  <%= f.label :content %>
+
+  <%= f.text_area :content, :cols => 100, :rows => 10 %><br>
+</div>
+
+
+
+  <%= f.submit %>
+<% end %>
